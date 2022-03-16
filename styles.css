@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: aqua;
+    padding: 20px;
+    height: 100vh;
+
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#location{
+    padding: 10px;
+}
+
+#location-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+#location-icon{
+    width: 30px;
+}
+
+#weather{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    align-items: center;
+}
+
+#weather-icon{
+    width: 100px;
+    height: 100px;
+}
+
+.box{
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    box-shadow: 10px 10px 5px 0px black;
+}
+
+#box-container{
+    display: flex;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+#fetch-btn{
+    padding: 15px;
+    margin-top: 40px;
+}

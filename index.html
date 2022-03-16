@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div id="container">
+        <h1>WEATHER IN</h1>
+        <input type="text" id="location" placeholder="Enter a city...">
+        <div id="location-container">
+            <svg id="location-icon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                fill="currentColor">
+                <path fill-rule="evenodd"
+                    d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                    clip-rule="evenodd" />
+            </svg>
+            <h4>Latitude: <span id="lat">12345</span></h4>
+            <h4>Longitude: <span id="lon">12345</span></h4>
+        </div>
+        <div id="weather">
+            <img id="weather-icon" src="./cat.jpg" alt="the weather icon">
+            <h4 id="weather-description">No Data</h4>
+        </div>
+        <div id="box-container">
+            <div class="box">
+                <h4 id="temperature">No Data</h4>
+                <h5>Temperature</h5>
+            </div>
+            <div class="box">
+                <h4 id="humidity">No Data</h4>
+                <h5>Humidity</h5>
+            </div>
+            <div class="box">
+                <h4 id="precipitation">No Data</h4>
+                <h5>Precipitation</h5>
+            </div>
+            <div class="box">
+                <h4 id="wind_speed">No Data</h4>
+                <h5>Wind Speed</h5>
+            </div>
+        </div>
+        <button id="fetch-btn">FETCH DATA</button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
